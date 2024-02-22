@@ -10,19 +10,15 @@
             Dado que eu configure meu produto de acordo com meu tamanho e gosto e escolher a quantidade
 
             Cenário: Campos obrigatórios totalmente preenchidos
-            Quando eu escolher os campos de cor, tamanho e quantidade 
-            E e apertar o botão "Comprar"
+            Quando eu escolher os campos de cor, tamanho e quantidade  e apertar o botão "Comprar"
             Então deve exibir uma mensagem de alerta "Produto inserido no carrinho"
 
             Cenário: Qualquer campo obrigatório não preenchido
-            Quando eu deixar um dos campos de cor, tamanho ou quantidade sem escolha
-            E e apertar o botão "Comprar"
+            Quando eu deixar um dos campos de cor, tamanho ou quantidade sem escolha e apertar o botão "Comprar"
             Então deve exibir uma mensagem de alerta "Campos cor, tamanho e quantidade, são obrigatórios!!!"
 
             Cenário: Limite de 10 produtos por venda
-            Quando eu colocar 10 itens no carrinho
-            E escolher mais um produto
-            E apertar o botão "Comprar"
+            Quando eu colocar 10 itens no carrinho e escolher mais um produto e apertar o botão "Comprar"
             Então deve exibir uma mensagem de alerta "Somente pode ser realizado a compra de 10 produtos por venda!!!"
 
             Cenário: Limpar formulário de Produto

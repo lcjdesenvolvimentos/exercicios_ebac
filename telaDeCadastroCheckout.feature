@@ -10,30 +10,20 @@
             Dado que acesse a página de autenicação do portal EBAC
 
             Cenário: Preenchimento correto
-            Quando eu preencher todos os campos obrigatórios com asterisco
-            E a pressionar o botão "Finalizar Compra"
+            Quando eu preencher todos os campos obrigatórios com asterisco e pressionar o botão "Finalizar Compra"
             Então deve finalizar a compra e colocar a mensagem "Compra finalizada"
 
             Cenário: Preenchimento incompleto
-            Quando eu deixar algum campo obrigatório com asterisco sem preencher
-            E a pressionar o botão "Finalizar Compra"
+            Quando eu deixar algum campo obrigatório com asterisco sem preencher e pressionar o botão "Finalizar Compra"
             Então deve permanecer na mesma página não permitindo a finalização da compra, colocar a mensagem "Campos obrigatórios faltantes!!!"
 
             Cenário: Preenchimento de e-mail incorreto
-            Quando eu digitar o e-mail "luis.ebac.com.br"
-            E a sair com o cursor do campo de e-mail
+            Quando eu digitar um e-mail no formato errado e a sair com o cursor do campo de e-mail
             Então deve alertar com a mensagem "E-mail com formato incorreto!!!"
 
 
             Esquema do Cenário: Multiplos Checkouts
-            Quando eu digitar o <nome>
-            E digitar <sobrenome>
-            E escolher o <pais>
-            E digitar <endereco>
-            E digitar <cidade>
-            E digitar <cep>
-            E digitar <telefone>
-            E digitar <email>
+            Quando eu digitar o <nome>, digitar <sobrenome>, escolher o <pais>, digitar <endereco>, digitar <cidade>, digitar <cep>, digitar <telefone> e digitar <email>
             Então deve exibir a <mensagem>
 
             Exemplos:
